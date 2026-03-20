@@ -1,0 +1,1 @@
+src/App.tsx(198,19): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?

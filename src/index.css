@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-steel-blue-50: #f2f7fb;
+  --color-steel-blue-100: #e1edf6;
+  --color-steel-blue-200: #c9dfef;
+  --color-steel-blue-300: #a3c9e4;
+  --color-steel-blue-400: #76abd4;
+  --color-steel-blue-500: #558ebf;
+  --color-steel-blue-600: #4274a5;
+  --color-steel-blue-700: #375e86;
+  --color-steel-blue-800: #31506f;
+  --color-steel-blue-900: #2c445d;
+  --color-steel-blue-950: #1d2c3d;
+}
+
+/* Accessibility: respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Screen-reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
