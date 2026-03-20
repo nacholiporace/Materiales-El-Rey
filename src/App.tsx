@@ -189,7 +189,7 @@ const Navbar = () => {
           <div className="w-12 h-12 md:w-14 md:h-14 bg-zinc-950 rounded-xl flex items-center justify-center shadow-lg shadow-red-500/20 p-2 overflow-hidden transition-all duration-300">
             <img src="/logo-transparent.png" alt="Materiales El Rey Logo" className="w-full h-auto object-contain" />
           </div>
-          <span className={`text-xl md:text-2xl font-bold tracking-tighter transition-colors ${isScrolled ? 'text-zinc-900' : 'text-white'}`}>MATERIALES<span className="text-red-500">EL REY</span></span>
+          <span className={`text-lg leading-tight md:text-2xl font-bold tracking-tighter transition-colors ${isScrolled ? 'text-zinc-900' : 'text-white'}`}>MATERIALES <span className="text-red-500">EL REY</span></span>
         </div>
 
         <div className={`hidden md:flex items-center gap-8 text-sm font-medium transition-colors ${isScrolled ? 'text-zinc-600' : 'text-white/80'}`}>
@@ -237,7 +237,7 @@ const Navbar = () => {
 
 const Hero = () => {
   return (
-    <section className="relative h-screen min-h-[800px] flex items-center overflow-hidden">
+    <section className="relative min-h-[850px] md:h-screen md:min-h-[800px] flex items-center overflow-hidden pt-32 pb-16 md:pt-0 md:pb-0">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -257,7 +257,7 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block px-4 py-1.5 bg-red-500/20 border border-red-500/30 rounded-full text-red-400 text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-sm">
+            <span className="inline-block px-4 py-1.5 bg-red-500/20 border border-red-500/30 rounded-full text-red-400 text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-sm mt-4 md:mt-0">
               EL PALOMAR. GRAN BUENOS AIRES • Materiales Directos
             </span>
             <h1 className="text-6xl md:text-8xl font-bold text-white leading-[0.9] tracking-tighter mb-6">
@@ -432,7 +432,7 @@ const Footer = () => {
               <div className="w-14 h-14 bg-zinc-950 rounded-xl flex items-center justify-center shadow-lg shadow-red-500/20 p-2 overflow-hidden">
                 <img src="/logo-transparent.png" alt="Materiales El Rey Logo" className="w-full h-auto object-contain" />
               </div>
-              <span className="text-2xl font-bold tracking-tighter text-zinc-900">MATERIALES<span className="text-red-500">EL REY</span></span>
+              <span className="text-2xl font-bold tracking-tighter text-zinc-900">MATERIALES <span className="text-red-500">EL REY</span></span>
             </div>
             <p className="text-zinc-600 max-w-sm mb-8">
               Tu punto central en El Palomar para la provisión de materiales para la construcción civil y arquitectónica.
