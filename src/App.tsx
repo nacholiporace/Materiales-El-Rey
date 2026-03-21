@@ -183,17 +183,19 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const isHeaderActive = isScrolled || isMenuOpen;
+
   return (
-    <nav aria-label="Navegación principal" className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md py-3 border-b border-zinc-200' : 'bg-transparent py-6'}`}>
+    <nav aria-label="Navegación principal" className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isHeaderActive ? 'bg-white/95 backdrop-blur-md py-3 border-b border-zinc-200 shadow-sm' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 md:w-14 md:h-14 bg-zinc-950 rounded-xl flex items-center justify-center shadow-lg shadow-red-500/20 p-2 overflow-hidden transition-all duration-300">
             <img src="/logo-transparent.png" alt="Materiales El Rey Logo" className="w-full h-auto object-contain" />
           </div>
-          <span className={`text-lg leading-tight md:text-2xl font-bold tracking-tighter transition-colors ${isScrolled ? 'text-zinc-900' : 'text-white'}`}>MATERIALES <span className="text-red-500">EL REY</span></span>
+          <span className={`text-lg leading-tight md:text-2xl font-bold tracking-tighter transition-colors ${isHeaderActive ? 'text-zinc-900' : 'text-white'}`}>MATERIALES <span className="text-red-500">EL REY</span></span>
         </div>
 
-        <div className={`hidden md:flex items-center gap-8 text-sm font-medium transition-colors ${isScrolled ? 'text-zinc-600' : 'text-white/80'}`}>
+        <div className={`hidden md:flex items-center gap-8 text-sm font-medium transition-colors ${isHeaderActive ? 'text-zinc-600' : 'text-white/80'}`}>
           <a href="#" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</a>
           <a href="#" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</a>
           <a href="#" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Proyectos</a>
@@ -201,14 +203,14 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <button aria-label="Buscar productos" className={`p-2 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded ${isScrolled ? 'text-zinc-600 hover:text-zinc-900' : 'text-white/80 hover:text-white'}`}>
+          <button aria-label="Buscar productos" className={`p-2 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded ${isHeaderActive ? 'text-zinc-600 hover:text-zinc-900' : 'text-white/80 hover:text-white'}`}>
             <Search className="w-5 h-5" aria-hidden="true" />
           </button>
-          <button aria-label="Carrito de compras: 0 artículos" className={`p-2 transition-colors duration-200 cursor-pointer relative focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded ${isScrolled ? 'text-zinc-600 hover:text-zinc-900' : 'text-white/80 hover:text-white'}`}>
+          <button aria-label="Carrito de compras: 0 artículos" className={`p-2 transition-colors duration-200 cursor-pointer relative focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded ${isHeaderActive ? 'text-zinc-600 hover:text-zinc-900' : 'text-white/80 hover:text-white'}`}>
             <ShoppingCart className="w-5 h-5" aria-hidden="true" />
             <span className="absolute top-0 right-0 w-4 h-4 bg-red-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center" aria-hidden="true">0</span>
           </button>
-          <button aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'} aria-expanded={isMenuOpen} className={`md:hidden p-2 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded ${isScrolled ? 'text-zinc-900' : 'text-white'}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'} aria-expanded={isMenuOpen} className={`md:hidden p-2 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded ${isHeaderActive ? 'text-zinc-900' : 'text-white'}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
           </button>
         </div>
