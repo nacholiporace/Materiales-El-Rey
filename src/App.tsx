@@ -539,7 +539,6 @@ export default function App() {
         <Hero />
         <Stats />
         <Categories />
-        <Reviews />
         <FAQ />
         
         {/* Call to Action Section */}
@@ -559,6 +558,8 @@ export default function App() {
             </div>
           </div>
         </section>
+        
+        <Reviews />
       </main>
       <Footer />
     </div>
