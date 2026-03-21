@@ -197,9 +197,10 @@ const Navbar = () => {
 
         <div className={`hidden md:flex items-center gap-8 text-sm font-medium transition-colors ${isHeaderActive ? 'text-zinc-600' : 'text-white/80'}`}>
           <a href="#" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</a>
-          <a href="#" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</a>
-          <a href="#" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Proyectos</a>
-          <a href="#" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Contacto</a>
+          <a href="#productos" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</a>
+          <a href="#faq" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Preguntas Frecuentes</a>
+          <a href="#proyectos" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Proyectos</a>
+          <a href="#contacto" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Contacto</a>
         </div>
 
         <div className="flex items-center gap-4">
@@ -226,10 +227,11 @@ const Navbar = () => {
             className="absolute top-full left-0 right-0 bg-white border-b border-zinc-200 p-6 md:hidden shadow-xl"
           >
             <div className="flex flex-col gap-4 text-zinc-600 font-medium">
-              <a href="#" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</a>
-              <a href="#" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</a>
-              <a href="#" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Proyectos</a>
-              <a href="#" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Contacto</a>
+              <a href="#" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</a>
+              <a href="#productos" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</a>
+              <a href="#faq" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Preguntas Frecuentes</a>
+              <a href="#proyectos" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Proyectos</a>
+              <a href="#contacto" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Contacto</a>
             </div>
           </motion.div>
         )}
@@ -342,7 +344,7 @@ const Hero = () => {
 
 const Categories = () => {
   return (
-    <section className="py-24 bg-stone-50">
+    <section id="productos" className="py-24 bg-stone-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-end justify-between mb-12">
           <div>
@@ -427,7 +429,7 @@ const Stats = () => {
 
 const Footer = () => {
   return (
-    <footer className="bg-white pt-24 pb-12 border-t border-zinc-200">
+    <footer id="contacto" className="bg-white pt-24 pb-12 border-t border-zinc-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
@@ -541,7 +543,7 @@ export default function App() {
         <FAQ />
         
         {/* Call to Action Section */}
-        <section className="py-24 relative overflow-hidden bg-stone-50">
+        <section id="proyectos" className="py-24 relative overflow-hidden bg-stone-50">
           <div className="max-w-7xl mx-auto px-6 relative z-10">
             <div className="bg-white rounded-[2rem] p-12 md:p-20 border border-zinc-200 flex flex-col md:flex-row items-center justify-between gap-12 shadow-2xl shadow-zinc-200/50">
               <div className="max-w-xl">

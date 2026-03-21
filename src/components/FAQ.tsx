@@ -54,7 +54,7 @@ const accordionItems: AccordionItemType[] = [
 
 export default function FAQ() {
   return (
-    <section className="w-full bg-white py-24 border-t border-zinc-200">
+    <section id="faq" className="w-full bg-white py-24 border-t border-zinc-200">
       <div className="max-w-3xl mx-auto px-6">
         <div className="mb-12 text-center">
           <p className="text-red-600 text-sm font-bold uppercase tracking-widest mb-2">Resolvé tus dudas</p>
