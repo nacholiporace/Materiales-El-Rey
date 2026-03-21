@@ -28,6 +28,7 @@ import {
 } from 'lucide-react';
 import { SiInstagram, SiWhatsapp, SiGooglemaps } from 'react-icons/si';
 import { motion, AnimatePresence } from 'motion/react';
+import FAQ from './components/FAQ';
 
 const categories = [
   { id: 1, name: 'Obra Gruesa', icon: BrickWall, image: '/obra-gruesa.png' },
@@ -535,6 +536,7 @@ export default function App() {
         <Stats />
         <Categories />
         <Reviews />
+        <FAQ />
         
         {/* Call to Action Section */}
         <section className="py-24 relative overflow-hidden bg-stone-50">
