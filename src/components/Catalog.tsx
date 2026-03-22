@@ -6,16 +6,26 @@ import { motion } from 'motion/react';
 import { useOutletContext, useSearchParams } from 'react-router-dom';
 import { CartItem } from './CartDrawer';
 
-const FICTITIOUS_PRODUCTS = [
-  { id: 1, name: 'Cemento Loma Negra 50kg', price: 9500, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
-  { id: 2, name: 'Hierro Acindar 8mm x 12m', price: 8200, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
-  { id: 3, name: 'Klaukol Impermeable 30kg', price: 12500, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
-  { id: 4, name: 'Ladrillo Hueco 18x18x33 (Pallet)', price: 145000, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
-  { id: 5, name: 'Arena Binder x Bolsón', price: 21000, category: 'Áridos', image: '/aridos.png' },
-  { id: 6, name: 'Piedra Partida x Bolsón', price: 24000, category: 'Áridos', image: '/aridos.png' },
-  { id: 7, name: 'Pintura Látex Interior 20L', price: 54000, category: 'Terminaciones', image: '/terminaciones.png' },
-  { id: 8, name: 'Malla Sima 15x15 6mm', price: 32000, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
-  { id: 9, name: 'Tubo PVC 110mm x 4m', price: 11500, category: 'Sanitarios', image: '/sanitarios.png' },
+const REAL_PRODUCTS = [
+  // Obra Gruesa
+  { id: 101, name: 'Cemento Loma Negra x 25 Kg', price: 6514, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
+  { id: 102, name: 'Cemento Avellaneda x 25 Kg', price: 6497, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
+  { id: 103, name: 'Cal Hidrat Extra x 25 Kg', price: 5401, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
+  { id: 104, name: 'Cal Hidráulica Cacique x 25 Kg', price: 5845, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
+  { id: 105, name: 'Hidralit x 20 Kg', price: 4431, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
+  { id: 106, name: 'Plasticor x 25 Kg', price: 5674, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
+  
+  // Herramientas e Insumos
+  { id: 201, name: 'Amoladora Angular 1200W 115mm', price: 105064, category: 'Herramientas', image: '/herramientas.png' },
+  { id: 202, name: 'Mango de Fuerza de 10"', price: 18381, category: 'Herramientas', image: '/herramientas.png' },
+  { id: 203, name: 'Pinza Universal 8" Aislada 1000V', price: 21522, category: 'Herramientas', image: '/herramientas.png' },
+  { id: 204, name: 'Arco de Sierra Tubular', price: 12041, category: 'Herramientas', image: '/herramientas.png' },
+  { id: 205, name: 'Martillo Carpintero 250gr', price: 9423, category: 'Herramientas', image: '/herramientas.png' },
+  { id: 206, name: 'Nivel de Aluminio Magnético 30"', price: 8061, category: 'Herramientas', image: '/herramientas.png' },
+  { id: 207, name: 'Cuchara de Albañil 7"', price: 13844, category: 'Herramientas', image: '/herramientas.png' },
+  { id: 208, name: 'Destornillador Phillips 2x150 mm', price: 3403, category: 'Herramientas', image: '/herramientas.png' },
+  { id: 209, name: 'Espátula Inox 60mm', price: 4218, category: 'Herramientas', image: '/herramientas.png' },
+  { id: 210, name: 'Lápiz Carpintero', price: 9227, category: 'Herramientas', image: '/herramientas.png' },
 ];
 
 const CATEGORIES = ['Todos', 'Obra Gruesa', 'Áridos', 'Terminaciones', 'Sanitarios', 'Herramientas', 'Electricidad'];
@@ -39,8 +49,8 @@ export default function Catalog() {
   }, [queryCategory]);
   
   const filteredProducts = activeCategory === 'Todos' 
-    ? FICTITIOUS_PRODUCTS 
-    : FICTITIOUS_PRODUCTS.filter(p => p.category === activeCategory);
+    ? REAL_PRODUCTS 
+    : REAL_PRODUCTS.filter(p => p.category === activeCategory);
 
   return (
     <div className="pt-32 pb-24 bg-stone-50 min-h-screen">
