@@ -29,6 +29,7 @@ import {
 import { SiInstagram, SiWhatsapp, SiGooglemaps } from 'react-icons/si';
 import { motion, AnimatePresence } from 'motion/react';
 import FAQ from './components/FAQ';
+import BrandsCTA from './components/BrandsCTA';
 
 const categories = [
   { id: 1, name: 'Obra Gruesa', icon: BrickWall, image: '/obra-gruesa.png' },
@@ -541,23 +542,8 @@ export default function App() {
         <Categories />
         <FAQ />
         
-        {/* Call to Action Section */}
-        <section id="proyectos" className="py-24 relative overflow-hidden bg-stone-50">
-          <div className="max-w-7xl mx-auto px-6 relative z-10">
-            <div className="bg-white rounded-[2rem] p-12 md:p-20 border border-zinc-200 flex flex-col md:flex-row items-center justify-between gap-12 shadow-2xl shadow-zinc-200/50">
-              <div className="max-w-xl">
-                <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-6 leading-tight">¿Listo para comenzar tu próximo <span className="text-red-600">gran proyecto</span>?</h2>
-                <p className="text-zinc-600 text-lg">Nuestro equipo de expertos está listo para asesorarte en cada etapa de tu obra. Cotizamos materiales a medida.</p>
-              </div>
-              <div className="flex flex-col gap-4 w-full md:w-auto">
-                <button className="bg-red-500 hover:bg-red-600 text-white font-bold px-10 py-5 rounded-2xl transition-all duration-200 shadow-xl shadow-red-500/20 text-lg cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-300 focus-visible:ring-offset-2">
-                  Hablar con un Asesor
-                </button>
-                <p className="text-zinc-500 text-center text-sm">Respuesta en menos de 15 minutos</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Call to Action Section (Brands/Integrations Hero) */}
+        <BrandsCTA />
         
         <Reviews />
       </main>
