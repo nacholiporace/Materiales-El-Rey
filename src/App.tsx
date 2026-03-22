@@ -599,11 +599,13 @@ function Layout() {
       
       <Navbar cartCount={cartCount} onCartClick={() => setIsCartOpen(true)} />
       
-      <main id="main-content" className="flex-1">
+      <main id="main-content" className={`flex-1 transition-all duration-300 ${isCartOpen ? 'md:pr-[448px]' : ''}`}>
         <Outlet context={{ cartItems, addToCart, updateQuantity, removeFromCart }} />
       </main>
       
-      <Footer />
+      <div className={`transition-all duration-300 ${isCartOpen ? 'md:pr-[448px]' : ''}`}>
+        <Footer />
+      </div>
 
       {/* Action Bar Floating for Mobile and Desktop when items exist */}
       <AnimatePresence>
