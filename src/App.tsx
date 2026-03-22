@@ -28,8 +28,10 @@ import {
 } from 'lucide-react';
 import { SiInstagram, SiWhatsapp, SiGooglemaps } from 'react-icons/si';
 import { motion, AnimatePresence } from 'motion/react';
+import { BrowserRouter, Routes, Route, Link, Outlet, useNavigate } from 'react-router-dom';
 import FAQ from './components/FAQ';
 import BrandsCTA from './components/BrandsCTA';
+import Catalog from './components/Catalog';
 
 const categories = [
   { id: 1, name: 'Obra Gruesa', icon: BrickWall, image: '/obra-gruesa.png' },
@@ -174,9 +176,10 @@ const Reviews = () => {
   );
 };
 
-const Navbar = () => {
+const Navbar = ({ cartCount }: { cartCount: number }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -197,20 +200,22 @@ const Navbar = () => {
         </div>
 
         <div className={`hidden md:flex items-center gap-8 text-sm font-medium transition-colors ${isHeaderActive ? 'text-zinc-600' : 'text-white/80'}`}>
-          <a href="#" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</a>
-          <a href="#productos" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</a>
-          <a href="#faq" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Preguntas Frecuentes</a>
-          <a href="#proyectos" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Proyectos</a>
-          <a href="#contacto" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Contacto</a>
+          <Link to="/" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</Link>
+          <Link to="/catalogo" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</Link>
+          <a href="/#faq" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Preguntas Frecuentes</a>
+          <a href="/#proyectos" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Proyectos</a>
+          <a href="/#contacto" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Contacto</a>
         </div>
 
         <div className="flex items-center gap-4">
-          <button aria-label="Buscar productos" className={`p-2 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded ${isHeaderActive ? 'text-zinc-600 hover:text-zinc-900' : 'text-white/80 hover:text-white'}`}>
+          <button onClick={() => navigate('/catalogo')} aria-label="Buscar productos" className={`p-2 transition-colors duration-200 cursor-pointer text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-full bg-white/5 border border-white/10 md:bg-transparent md:border-transparent ${isHeaderActive ? 'md:text-zinc-600 md:hover:text-zinc-900' : 'md:text-white md:hover:text-red-400'}`}>
             <Search className="w-5 h-5" aria-hidden="true" />
           </button>
-          <button aria-label="Carrito de compras: 0 artículos" className={`p-2 transition-colors duration-200 cursor-pointer relative focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded ${isHeaderActive ? 'text-zinc-600 hover:text-zinc-900' : 'text-white/80 hover:text-white'}`}>
+          <button onClick={() => navigate('/catalogo')} aria-label={`Carrito de compras: ${cartCount} artículos`} className={`p-2 transition-colors duration-200 cursor-pointer relative focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-full bg-white/5 text-white border border-white/10 md:bg-transparent md:border-transparent ${isHeaderActive ? 'md:text-zinc-600 md:hover:text-zinc-900' : 'md:text-white md:hover:text-red-400'}`}>
             <ShoppingCart className="w-5 h-5" aria-hidden="true" />
-            <span className="absolute top-0 right-0 w-4 h-4 bg-red-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center" aria-hidden="true">0</span>
+            {cartCount > 0 && (
+              <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center" aria-hidden="true">{cartCount}</span>
+            )}
           </button>
           <button aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'} aria-expanded={isMenuOpen} className={`md:hidden p-2 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded ${isHeaderActive ? 'text-zinc-900' : 'text-white'}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
@@ -228,11 +233,11 @@ const Navbar = () => {
             className="absolute top-full left-0 right-0 bg-white border-b border-zinc-200 p-6 md:hidden shadow-xl"
           >
             <div className="flex flex-col gap-4 text-zinc-600 font-medium">
-              <a href="#" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</a>
-              <a href="#productos" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</a>
-              <a href="#faq" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Preguntas Frecuentes</a>
-              <a href="#proyectos" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Proyectos</a>
-              <a href="#contacto" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Contacto</a>
+              <Link to="/" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</Link>
+              <Link to="/catalogo" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</Link>
+              <a href="/#faq" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Preguntas Frecuentes</a>
+              <a href="/#proyectos" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Proyectos</a>
+              <a href="/#contacto" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Contacto</a>
             </div>
           </motion.div>
         )}
@@ -352,26 +357,26 @@ const Categories = () => {
             <p className="text-red-600 text-sm font-bold uppercase tracking-widest mb-2">Categorías</p>
             <h2 className="text-4xl font-bold text-zinc-900 tracking-tight">Todo para tu <span className="text-red-600 italic">obra</span></h2>
           </div>
-          <button className="text-red-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">
+          <Link to="/catalogo" className="text-red-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">
             Ver catálogo completo <ChevronRight className="w-4 h-4" aria-hidden="true" />
-          </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 md:auto-rows-[300px] gap-6">
           {categories.map((cat, idx) => (
-            <motion.div
-              key={cat.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.1 }}
-              viewport={{ once: true }}
-              role="button"
-              tabIndex={0}
-              aria-label={`Explorar categoría ${cat.name}`}
-              className={`group relative overflow-hidden rounded-3xl cursor-pointer shadow-sm hover:shadow-2xl transition-all duration-500 focus:outline-none focus-visible:ring-4 focus-visible:ring-red-500 focus-visible:ring-offset-2 ${
-                idx === 0 ? 'md:col-span-2 md:row-span-2 min-h-[400px] md:min-h-0' : 'col-span-1 row-span-1 min-h-[300px]'
-              }`}
-            >
+            <Link to={`/catalogo?c=${cat.name}`} key={cat.id} className="contents">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: idx * 0.1 }}
+                viewport={{ once: true }}
+                role="button"
+                tabIndex={0}
+                aria-label={`Explorar categoría ${cat.name}`}
+                className={`group relative overflow-hidden rounded-3xl cursor-pointer shadow-sm hover:shadow-2xl transition-all duration-500 focus:outline-none focus-visible:ring-4 focus-visible:ring-red-500 focus-visible:ring-offset-2 w-full h-full block ${
+                  idx === 0 ? 'md:col-span-2 md:row-span-2 min-h-[350px] md:min-h-0' : 'col-span-1 row-span-1 min-h-[300px] md:min-h-0'
+                } ${idx === 1 ? 'md:col-span-2' : ''}`}
+              >
               <img 
                 src={cat.image} 
                 alt={`Materiales de ${cat.name}`} 
@@ -395,7 +400,8 @@ const Categories = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+              </motion.div>
+            </Link>
           ))}
         </div>
       </div>
@@ -530,24 +536,47 @@ const Footer = () => {
   );
 };
 
-export default function App() {
+function Layout() {
+  const [cartCount, setCartCount] = useState(0);
+
   return (
-    <div className="min-h-screen bg-white selection:bg-red-500 selection:text-white font-sans">
+    <div className="min-h-screen bg-white selection:bg-red-500 selection:text-white font-sans flex flex-col">
       <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-red-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:font-bold">Saltar al contenido principal</a>
       <FloatingWhatsApp />
-      <Navbar />
-      <main id="main-content">
-        <Hero />
-        <Stats />
-        <Categories />
-        <FAQ />
-        
-        {/* Call to Action Section (Brands/Integrations Hero) */}
-        <BrandsCTA />
-        
-        <Reviews />
+      <Navbar cartCount={cartCount} />
+      
+      <main id="main-content" className="flex-1">
+        {/* Pass setCartCount horizontally via Context or cloneElement in real apps, but for this simple Outlet wrapper we'll expose a prop to Outlet context */}
+        <Outlet context={{ setCartCount }} />
       </main>
+      
       <Footer />
     </div>
+  );
+}
+
+function LandingPage() {
+  return (
+    <>
+      <Hero />
+      <Stats />
+      <Categories />
+      <FAQ />
+      <BrandsCTA />
+      <Reviews />
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<LandingPage />} />
+          <Route path="catalogo" element={<Catalog />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
