@@ -32,6 +32,7 @@ import { BrowserRouter, Routes, Route, Link, Outlet, useNavigate, useLocation } 
 import FAQ from './components/FAQ';
 import BrandsCTA from './components/BrandsCTA';
 import Catalog from './components/Catalog';
+import CartDrawer, { CartItem } from './components/CartDrawer';
 
 const categories = [
   { id: 1, name: 'Obra Gruesa', icon: BrickWall, image: '/obra-gruesa.png' },
@@ -176,7 +177,7 @@ const Reviews = () => {
   );
 };
 
-const Navbar = ({ cartCount }: { cartCount: number }) => {
+const Navbar = ({ cartCount, onCartClick }: { cartCount: number, onCartClick: () => void }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -213,7 +214,7 @@ const Navbar = ({ cartCount }: { cartCount: number }) => {
           <button onClick={() => navigate('/catalogo')} aria-label="Buscar productos" className={`p-2 transition-colors duration-200 cursor-pointer text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-full bg-white/5 border border-white/10 md:bg-transparent md:border-transparent ${isHeaderActive ? 'md:text-zinc-600 md:hover:text-zinc-900' : 'md:text-white md:hover:text-red-400'}`}>
             <Search className="w-5 h-5" aria-hidden="true" />
           </button>
-          <button onClick={() => navigate('/catalogo')} aria-label={`Carrito de compras: ${cartCount} artículos`} className={`p-2 transition-colors duration-200 cursor-pointer relative focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-full bg-white/5 text-white border border-white/10 md:bg-transparent md:border-transparent ${isHeaderActive ? 'md:text-zinc-600 md:hover:text-zinc-900' : 'md:text-white md:hover:text-red-400'}`}>
+          <button onClick={onCartClick} aria-label={`Carrito de cotización: ${cartCount} artículos`} className={`p-2 transition-colors duration-200 cursor-pointer relative focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-full bg-white/5 text-white border border-white/10 md:bg-transparent md:border-transparent ${isHeaderActive ? 'md:text-zinc-600 md:hover:text-zinc-900' : 'md:text-white md:hover:text-red-400'}`}>
             <ShoppingCart className="w-5 h-5" aria-hidden="true" />
             {cartCount > 0 && (
               <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center" aria-hidden="true">{cartCount}</span>
@@ -539,20 +540,57 @@ const Footer = () => {
 };
 
 function Layout() {
-  const [cartCount, setCartCount] = useState(0);
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const cartCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+
+  const addToCart = (product: Omit<CartItem, 'quantity'>) => {
+    setCartItems(prev => {
+      const existing = prev.find(item => item.id === product.id);
+      if (existing) {
+        return prev.map(item => item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item);
+      }
+      return [...prev, { ...product, quantity: 1 }];
+    });
+    setIsCartOpen(true);
+  };
+
+  const updateQuantity = (id: number, delta: number) => {
+    setCartItems(prev => {
+      return prev.map(item => {
+        if (item.id === id) {
+          const newQuantity = item.quantity + delta;
+          return { ...item, quantity: newQuantity > 0 ? newQuantity : 0 };
+        }
+        return item;
+      }).filter(item => item.quantity > 0);
+    });
+  };
+
+  const removeFromCart = (id: number) => {
+    setCartItems(prev => prev.filter(item => item.id !== id));
+  };
 
   return (
     <div className="min-h-screen bg-white selection:bg-red-500 selection:text-white font-sans flex flex-col">
       <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-red-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:font-bold">Saltar al contenido principal</a>
       <FloatingWhatsApp />
-      <Navbar cartCount={cartCount} />
+      <Navbar cartCount={cartCount} onCartClick={() => setIsCartOpen(true)} />
       
       <main id="main-content" className="flex-1">
-        {/* Pass setCartCount horizontally via Context or cloneElement in real apps, but for this simple Outlet wrapper we'll expose a prop to Outlet context */}
-        <Outlet context={{ setCartCount }} />
+        <Outlet context={{ addToCart }} />
       </main>
       
       <Footer />
+
+      <CartDrawer 
+        isOpen={isCartOpen}
+        onClose={() => setIsCartOpen(false)}
+        items={cartItems}
+        onUpdateQuantity={updateQuantity}
+        onRemove={removeFromCart}
+      />
     </div>
   );
 }

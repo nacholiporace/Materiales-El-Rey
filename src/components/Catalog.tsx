@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Heart, Search, Filter } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useOutletContext, useSearchParams } from 'react-router-dom';
+import { CartItem } from './CartDrawer';
 
 const FICTITIOUS_PRODUCTS = [
   { id: 1, name: 'Cemento Loma Negra 50kg', price: 9500, category: 'Obra Gruesa', image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop' },
@@ -24,7 +25,7 @@ export default function Catalog() {
   const queryCategory = searchParams.get('c');
   
   const [activeCategory, setActiveCategory] = useState(queryCategory && CATEGORIES.includes(queryCategory) ? queryCategory : 'Todos');
-  const { setCartCount } = useOutletContext<{ setCartCount: React.Dispatch<React.SetStateAction<number>> }>();
+  const { addToCart } = useOutletContext<{ addToCart: (product: Omit<CartItem, 'quantity'>) => void }>();
   
   useEffect(() => {
     if (queryCategory && CATEGORIES.includes(queryCategory)) {
@@ -119,11 +120,16 @@ export default function Catalog() {
                 </div>
                 
                 <button 
-                  onClick={() => setCartCount(c => c + 1)}
+                  onClick={() => addToCart({
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    image: product.image
+                  })}
                   className="w-full bg-zinc-900 hover:bg-red-600 text-white font-bold py-3.5 rounded-xl transition-colors duration-300 flex items-center justify-center gap-2 group/btn"
                 >
                   <ShoppingCart className="w-5 h-5 transition-transform group-hover/btn:-rotate-12" />
-                  Agregar al Carrito
+                  Agregar al Presupuesto
                 </button>
               </div>
             </motion.div>
