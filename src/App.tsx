@@ -24,7 +24,9 @@ import {
   Clock,
   CreditCard,
   CheckCircle2,
-  MapPin
+  MapPin,
+  Mountain,
+  Zap
 } from 'lucide-react';
 import { SiInstagram, SiWhatsapp, SiGooglemaps } from 'react-icons/si';
 import { motion, AnimatePresence } from 'motion/react';
@@ -36,10 +38,10 @@ import CartDrawer, { CartItem } from './components/CartDrawer';
 
 const categories = [
   { id: 1, name: 'Obra Gruesa', icon: BrickWall, image: '/obra-gruesa.png' },
-  { id: 2, name: 'Terminaciones', icon: PaintBucket, image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=1000' },
-  { id: 3, name: 'Herramientas', icon: Hammer, image: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=1000' },
-  { id: 4, name: 'Sanitarios', icon: Wrench, image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1000' },
-  { id: 5, name: 'Electricidad', icon: Layers, image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=1000' },
+  { id: 2, name: 'Terminaciones', icon: PaintBucket, image: '/terminaciones.png' },
+  { id: 3, name: 'Herramientas', icon: Hammer, image: '/herramientas.png' },
+  { id: 4, name: 'Áridos', icon: Mountain, image: '/aridos.png' },
+  { id: 5, name: 'Electricidad', icon: Zap, image: '/electricidad.png' },
 ];
 
 const FloatingWhatsApp = () => (

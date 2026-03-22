@@ -7,7 +7,7 @@ import { useOutletContext, useSearchParams } from 'react-router-dom';
 import { CartItem } from './CartDrawer';
 import RAW_PRODUCTS from '../data/products.json';
 
-const CATEGORIES = ['Todos', 'Obra Gruesa', 'Áridos', 'Terminaciones', 'Sanitarios', 'Herramientas', 'Electricidad'];
+const CATEGORIES = ['Todos', 'Obra Gruesa', 'Áridos', 'Terminaciones', 'Herramientas', 'Electricidad'];
 
 export default function Catalog() {
   const [searchParams] = useSearchParams();
