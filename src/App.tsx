@@ -276,6 +276,18 @@ const Navbar = ({ cartCount, onCartClick }: { cartCount: number, onCartClick: ()
 };
 
 const Hero = () => {
+  const [query, setQuery] = useState('');
+  const navigate = useNavigate();
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (query.trim()) {
+      navigate(`/catalogo?q=${encodeURIComponent(query.trim())}`);
+    } else {
+      navigate('/catalogo');
+    }
+  };
+
   return (
     <section className="relative min-h-[850px] md:h-screen md:min-h-[800px] flex items-center overflow-hidden pt-32 pb-16 md:pt-0 md:pb-0">
       {/* Background Image with Overlay */}
@@ -310,17 +322,23 @@ const Hero = () => {
               <li className="flex items-center gap-3"><CheckCircle2 className="text-red-500 w-6 h-6 flex-shrink-0" /> <span className="bg-black/30 px-3 py-1.5 rounded-lg backdrop-blur-md">Aceptamos Cuota Simple, Transferencia y Efectivo</span></li>
             </ul>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <form onSubmit={handleSearch} className="flex flex-col sm:flex-row gap-4 mb-12">
               <div className="relative flex-1 max-w-md">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400 w-5 h-5" aria-hidden="true" />
                 <label htmlFor="hero-search" className="sr-only">Buscar materiales de construcción</label>
                 <input 
                   id="hero-search"
                   type="text" 
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
                   placeholder="¿Qué estás buscando hoy?" 
                   className="w-full bg-white/10 border border-white/20 rounded-xl py-4 pl-12 pr-4 text-white placeholder:text-zinc-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus:border-red-500/50 transition-all duration-200 backdrop-blur-md"
                 />
               </div>
+              <button 
+                type="submit"
+                className="hidden"
+              />
               <a 
                 href="https://wa.me/541137221189" 
                 target="_blank" 
@@ -338,7 +356,7 @@ const Hero = () => {
                   <ChevronRight className="w-5 h-5" aria-hidden="true" />
                 </div>
               </a>
-            </div>
+            </form>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8">
               <div className="flex items-center gap-3">

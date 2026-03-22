@@ -12,8 +12,11 @@ const CATEGORIES = ['Todos', 'Obra Gruesa', 'Áridos', 'Terminaciones', 'Herrami
 export default function Catalog() {
   const [searchParams] = useSearchParams();
   const queryCategory = searchParams.get('c');
+  const querySearch = searchParams.get('q') || '';
   
   const [activeCategory, setActiveCategory] = useState(queryCategory && CATEGORIES.includes(queryCategory) ? queryCategory : 'Todos');
+  const [searchQuery, setSearchQuery] = useState(querySearch);
+  
   const { cartItems, addToCart, updateQuantity, removeFromCart } = useOutletContext<{ 
     cartItems: CartItem[];
     addToCart: (product: Omit<CartItem, 'quantity'>) => void;
@@ -26,10 +29,19 @@ export default function Catalog() {
       setActiveCategory(queryCategory);
     }
   }, [queryCategory]);
+
+  useEffect(() => {
+    if (querySearch !== searchQuery) {
+      setSearchQuery(querySearch);
+    }
+  }, [querySearch]);
   
-  const filteredProducts = activeCategory === 'Todos' 
-    ? RAW_PRODUCTS 
-    : RAW_PRODUCTS.filter(p => p.category === activeCategory);
+  const filteredProducts = RAW_PRODUCTS.filter(p => {
+    const matchesCategory = activeCategory === 'Todos' || p.category === activeCategory;
+    const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                          p.category.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesCategory && matchesSearch;
+  });
 
   return (
     <div className="pt-32 pb-24 bg-stone-50 min-h-screen">
@@ -47,6 +59,8 @@ export default function Catalog() {
             <input 
               type="text" 
               placeholder="Buscar productos..." 
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-3 bg-white border border-zinc-200 rounded-xl focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors shadow-sm"
             />
           </div>
