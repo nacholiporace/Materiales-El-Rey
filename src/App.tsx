@@ -306,14 +306,14 @@ const Hero = () => {
               </a>
             </div>
 
-            <div className="flex items-center gap-8">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center border border-white/20 backdrop-blur-sm">
                   <Truck className="text-red-500 w-5 h-5" />
                 </div>
                 <div>
                   <p className="text-white text-sm font-bold">Envío Express</p>
-                  <p className="text-zinc-300 text-xs">Zona El Palomar y alrededores</p>
+                  <p className="text-zinc-300 text-[11px] sm:text-xs">Zona El Palomar y alrededores</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -322,7 +322,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <p className="text-white text-sm font-bold">Garantía Total</p>
-                  <p className="text-zinc-300 text-xs">Materiales certificados</p>
+                  <p className="text-zinc-300 text-[11px] sm:text-xs">Materiales certificados</p>
                 </div>
               </div>
             </div>
@@ -334,7 +334,7 @@ const Hero = () => {
       <motion.div 
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-zinc-400"
+        className="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-zinc-400"
       >
         <span className="text-[10px] uppercase tracking-widest font-bold">Explorar</span>
         <div className="w-px h-12 bg-gradient-to-b from-red-500 to-transparent"></div>
