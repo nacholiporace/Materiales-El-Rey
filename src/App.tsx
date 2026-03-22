@@ -592,7 +592,7 @@ function Layout() {
       <Navbar cartCount={cartCount} onCartClick={() => setIsCartOpen(true)} />
       
       <main id="main-content" className="flex-1">
-        <Outlet context={{ addToCart }} />
+        <Outlet context={{ cartItems, addToCart, updateQuantity, removeFromCart }} />
       </main>
       
       <Footer />

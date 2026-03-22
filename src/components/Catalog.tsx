@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { ShoppingCart, Heart, Search, Filter } from 'lucide-react';
+import { ShoppingCart, Heart, Search, Filter, Minus, Plus, Trash2 } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useOutletContext, useSearchParams } from 'react-router-dom';
 import { CartItem } from './CartDrawer';
@@ -25,7 +25,12 @@ export default function Catalog() {
   const queryCategory = searchParams.get('c');
   
   const [activeCategory, setActiveCategory] = useState(queryCategory && CATEGORIES.includes(queryCategory) ? queryCategory : 'Todos');
-  const { addToCart } = useOutletContext<{ addToCart: (product: Omit<CartItem, 'quantity'>) => void }>();
+  const { cartItems, addToCart, updateQuantity, removeFromCart } = useOutletContext<{ 
+    cartItems: CartItem[];
+    addToCart: (product: Omit<CartItem, 'quantity'>) => void;
+    updateQuantity: (id: number, delta: number) => void;
+    removeFromCart: (id: number) => void;
+  }>();
   
   useEffect(() => {
     if (queryCategory && CATEGORIES.includes(queryCategory)) {
@@ -119,18 +124,43 @@ export default function Catalog() {
                   </div>
                 </div>
                 
-                <button 
-                  onClick={() => addToCart({
-                    id: product.id,
-                    name: product.name,
-                    price: product.price,
-                    image: product.image
-                  })}
-                  className="w-full bg-zinc-900 hover:bg-red-600 text-white font-bold py-3.5 rounded-xl transition-colors duration-300 flex items-center justify-center gap-2 group/btn"
-                >
-                  <ShoppingCart className="w-5 h-5 transition-transform group-hover/btn:-rotate-12" />
-                  Agregar al Presupuesto
-                </button>
+                {(() => {
+                  const cartItem = cartItems.find(item => item.id === product.id);
+                  if (cartItem) {
+                    return (
+                      <div className="w-full bg-zinc-100 rounded-xl py-2 px-4 flex items-center justify-between border border-zinc-200">
+                        <button 
+                          onClick={() => cartItem.quantity === 1 ? removeFromCart(product.id) : updateQuantity(product.id, -1)}
+                          className="p-2 text-zinc-500 hover:text-red-500 hover:bg-white rounded-lg transition-colors shadow-sm"
+                        >
+                          {cartItem.quantity === 1 ? <Trash2 className="w-4 h-4" /> : <Minus className="w-4 h-4" />}
+                        </button>
+                        <span className="font-bold text-zinc-900 w-12 text-center text-lg">{cartItem.quantity}</span>
+                        <button 
+                          onClick={() => updateQuantity(product.id, 1)}
+                          className="p-2 text-zinc-500 hover:text-zinc-900 hover:bg-white rounded-lg transition-colors shadow-sm"
+                        >
+                          <Plus className="w-4 h-4" />
+                        </button>
+                      </div>
+                    );
+                  }
+
+                  return (
+                    <button 
+                      onClick={() => addToCart({
+                        id: product.id,
+                        name: product.name,
+                        price: product.price,
+                        image: product.image
+                      })}
+                      className="w-full bg-zinc-900 hover:bg-red-600 text-white font-bold py-3.5 rounded-xl transition-colors duration-300 flex items-center justify-center gap-2 group/btn"
+                    >
+                      <ShoppingCart className="w-5 h-5 transition-transform group-hover/btn:-rotate-12" />
+                      Agregar al Presupuesto
+                    </button>
+                  );
+                })()}
               </div>
             </motion.div>
           ))}
