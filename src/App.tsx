@@ -557,6 +557,7 @@ function Layout() {
   }, [pathname]);
 
   const cartCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+  const cartTotal = cartItems.reduce((acc, item) => acc + (item.price * item.quantity), 0);
 
   const addToCart = (product: Omit<CartItem, 'quantity'>) => {
     setCartItems(prev => {
@@ -566,7 +567,6 @@ function Layout() {
       }
       return [...prev, { ...product, quantity: 1 }];
     });
-    setIsCartOpen(true);
   };
 
   const updateQuantity = (id: number, delta: number) => {
@@ -586,9 +586,14 @@ function Layout() {
   };
 
   return (
-    <div className="min-h-screen bg-white selection:bg-red-500 selection:text-white font-sans flex flex-col">
+    <div className="min-h-screen bg-white selection:bg-red-500 selection:text-white font-sans flex flex-col relative pb-20 md:pb-0">
       <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-red-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:font-bold">Saltar al contenido principal</a>
-      <FloatingWhatsApp />
+      
+      {/* Escondemos el logo flotante si el action bar está presente en mobile para no pisarlo */}
+      <div className={cartCount > 0 && !isCartOpen ? 'hidden md:block' : 'block'}>
+        <FloatingWhatsApp />
+      </div>
+      
       <Navbar cartCount={cartCount} onCartClick={() => setIsCartOpen(true)} />
       
       <main id="main-content" className="flex-1">
@@ -596,6 +601,30 @@ function Layout() {
       </main>
       
       <Footer />
+
+      {/* Action Bar Floating for Mobile and Desktop when items exist */}
+      <AnimatePresence>
+        {cartCount > 0 && !isCartOpen && (
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 100, opacity: 0 }}
+            className="fixed bottom-4 left-4 right-4 md:bottom-6 md:left-auto md:right-6 bg-zinc-900 border border-zinc-700 shadow-2xl rounded-2xl p-4 z-40 flex items-center justify-between md:min-w-[400px]"
+          >
+            <div className="flex flex-col">
+              <span className="text-white font-medium text-sm">Presupuesto pendiente</span>
+              <span className="text-zinc-300 font-bold text-lg">{cartCount} ítems - ${cartTotal.toLocaleString('es-AR')}</span>
+            </div>
+            
+            <button
+              onClick={() => setIsCartOpen(true)}
+              className="bg-red-600 hover:bg-red-500 text-white font-bold py-2.5 px-6 rounded-xl transition-colors shadow-lg shadow-red-500/20 active:scale-95 transform"
+            >
+              Ver Detalle
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <CartDrawer 
         isOpen={isCartOpen}
