@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Heart, Search, Filter } from 'lucide-react';
 import { motion } from 'motion/react';
-import { useOutletContext } from 'react-router-dom';
+import { useOutletContext, useSearchParams } from 'react-router-dom';
 
 const FICTITIOUS_PRODUCTS = [
   { id: 1, name: 'Cemento Loma Negra 50kg', price: 9500, category: 'Obra Gruesa', image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop' },
@@ -20,8 +20,17 @@ const FICTITIOUS_PRODUCTS = [
 const CATEGORIES = ['Todos', 'Obra Gruesa', 'Áridos', 'Terminaciones', 'Sanitarios', 'Herramientas', 'Electricidad'];
 
 export default function Catalog() {
-  const [activeCategory, setActiveCategory] = useState('Todos');
+  const [searchParams] = useSearchParams();
+  const queryCategory = searchParams.get('c');
+  
+  const [activeCategory, setActiveCategory] = useState(queryCategory && CATEGORIES.includes(queryCategory) ? queryCategory : 'Todos');
   const { setCartCount } = useOutletContext<{ setCartCount: React.Dispatch<React.SetStateAction<number>> }>();
+  
+  useEffect(() => {
+    if (queryCategory && CATEGORIES.includes(queryCategory)) {
+      setActiveCategory(queryCategory);
+    }
+  }, [queryCategory]);
   
   const filteredProducts = activeCategory === 'Todos' 
     ? FICTITIOUS_PRODUCTS 

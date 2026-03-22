@@ -28,7 +28,7 @@ import {
 } from 'lucide-react';
 import { SiInstagram, SiWhatsapp, SiGooglemaps } from 'react-icons/si';
 import { motion, AnimatePresence } from 'motion/react';
-import { BrowserRouter, Routes, Route, Link, Outlet, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, Outlet, useNavigate, useLocation } from 'react-router-dom';
 import FAQ from './components/FAQ';
 import BrandsCTA from './components/BrandsCTA';
 import Catalog from './components/Catalog';
@@ -180,6 +180,7 @@ const Navbar = ({ cartCount }: { cartCount: number }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -187,7 +188,8 @@ const Navbar = ({ cartCount }: { cartCount: number }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const isHeaderActive = isScrolled || isMenuOpen;
+  const isCatalogPage = location.pathname.includes('/catalogo');
+  const isHeaderActive = isScrolled || isMenuOpen || isCatalogPage;
 
   return (
     <nav aria-label="Navegación principal" className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isHeaderActive ? 'bg-white/95 backdrop-blur-md py-3 border-b border-zinc-200 shadow-sm' : 'bg-transparent py-6'}`}>
@@ -201,7 +203,7 @@ const Navbar = ({ cartCount }: { cartCount: number }) => {
 
         <div className={`hidden md:flex items-center gap-8 text-sm font-medium transition-colors ${isHeaderActive ? 'text-zinc-600' : 'text-white/80'}`}>
           <Link to="/" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</Link>
-          <Link to="/catalogo" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</Link>
+          <a href="/#productos" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</a>
           <a href="/#faq" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Preguntas Frecuentes</a>
           <a href="/#proyectos" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Proyectos</a>
           <a href="/#contacto" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Contacto</a>
@@ -234,7 +236,7 @@ const Navbar = ({ cartCount }: { cartCount: number }) => {
           >
             <div className="flex flex-col gap-4 text-zinc-600 font-medium">
               <Link to="/" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</Link>
-              <Link to="/catalogo" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</Link>
+              <a href="/#productos" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</a>
               <a href="/#faq" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Preguntas Frecuentes</a>
               <a href="/#proyectos" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Proyectos</a>
               <a href="/#contacto" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Contacto</a>
