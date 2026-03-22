@@ -1,0 +1,2144 @@
+[
+  {
+    "id": 1,
+    "name": "CEMENTO LOMA NEGRA X 25 KG",
+    "price": 6514.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 2,
+    "name": "CEMENTO AVELLANEDA X 25KG",
+    "price": 6497.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 3,
+    "name": "CAL HIDRAT EXTRA X 25 KG",
+    "price": 5401.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 4,
+    "name": "CAL HIDRAULICA CACIQUE X 25 KG",
+    "price": 5845.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 5,
+    "name": "HIDRALIT X 20KG",
+    "price": 4431.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 6,
+    "name": "PLASTICOR X 25 KG",
+    "price": 5674.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 7,
+    "name": "CAL SANTA ELENA X 20 KG",
+    "price": 5125.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 8,
+    "name": "CAL AEREA MILAGRO X 20KG",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 9,
+    "name": "YESO TUYANGO X 30 KG",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 10,
+    "name": "YESO TUYANGO PROYECTABLE X 30 KG",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 11,
+    "name": "ARENA X MTR",
+    "price": 3.0,
+    "category": "Áridos",
+    "image": "/aridos.png"
+  },
+  {
+    "id": 12,
+    "name": "PIEDRA PARTIDA 6/20 X MTR",
+    "price": 7.0,
+    "category": "Áridos",
+    "image": "/aridos.png"
+  },
+  {
+    "id": 13,
+    "name": "GRANZA X MTR",
+    "price": 5.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 14,
+    "name": "CASCOTE PICADO X MTR",
+    "price": 3.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 15,
+    "name": "TOSCA X MTR",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 16,
+    "name": "BOLSON ARENA",
+    "price": 3.0,
+    "category": "Áridos",
+    "image": "/aridos.png"
+  },
+  {
+    "id": 17,
+    "name": "BOLSON PIEDRA 6/20",
+    "price": 6.0,
+    "category": "Áridos",
+    "image": "/aridos.png"
+  },
+  {
+    "id": 18,
+    "name": "BOLSITA PIEDRA 6/20",
+    "price": 1950.0,
+    "category": "Áridos",
+    "image": "/aridos.png"
+  },
+  {
+    "id": 19,
+    "name": "BOLSITA ARENA",
+    "price": 1294.0,
+    "category": "Áridos",
+    "image": "/aridos.png"
+  },
+  {
+    "id": 20,
+    "name": "LADRILLO COMUN 1000/700",
+    "price": 203.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 21,
+    "name": "LADRILLO VISTA CORDOBA",
+    "price": 340.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 22,
+    "name": "LISTONCITO CORDOBA X PAQ.1/2 M.",
+    "price": 3651.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 23,
+    "name": "HUECOS 8X18X33 198/216",
+    "price": 440.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 24,
+    "name": "HUECOS 12X18X33",
+    "price": 557.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 25,
+    "name": "HUECOS 18X18X33",
+    "price": 803.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 26,
+    "name": "BLOQUE TECHO 11 CM.",
+    "price": 962.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 27,
+    "name": "PORTANTE 12X19X33 120/126",
+    "price": 864.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 28,
+    "name": "PORTANTE 18X19X33",
+    "price": 1062.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 29,
+    "name": "NYLON 100 MICRONES 100 X 2 MTR",
+    "price": 7.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 30,
+    "name": "BLOQUE TECHO TELGOPOR 100X40X10",
+    "price": 3185.71,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 31,
+    "name": "BLOQUE TECHO TELGOPOR 100X40X12",
+    "price": 3822.85,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 32,
+    "name": "PLANCHA TELGOPOR 20X1000X1000",
+    "price": 1911.42,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 33,
+    "name": "ISOCRET X 170 LTS Bolsa",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 34,
+    "name": "HIERRO ø 4.2 ADN X BARRA",
+    "price": 4570.01,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 35,
+    "name": "HIERROS Ø 6 ADN X BARRA",
+    "price": 4972.08,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 36,
+    "name": "HIERROS Ø 8 ADN X BARRA",
+    "price": 8599.77,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 37,
+    "name": "HIERROS Ø 10 ADN X BARRA",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 38,
+    "name": "HIERROS Ø 12 ADN X BARRA",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 39,
+    "name": "HIERROS Ø 16 ADN X BARRA",
+    "price": 3.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 40,
+    "name": "HIERROS Ø 20 ADN X BARRA",
+    "price": 5.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 41,
+    "name": "HIERROS Ø 25 ADN X BARRA",
+    "price": 8.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 42,
+    "name": "HIERROS Ø 6 AL X BARRA",
+    "price": 5134.2,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 43,
+    "name": "HIERROS Ø 8 AL X BARRA",
+    "price": 8967.26,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 44,
+    "name": "HIERROS Ø 12 AL X BARRA",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 45,
+    "name": "HIERROS Ø 16 AL X BARRA",
+    "price": 3.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 46,
+    "name": "HIERROS Ø 20 AL X BARRA",
+    "price": 5.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 47,
+    "name": "MALLA RL-84 (15X25) Ø3,5 5x2 MTR",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 48,
+    "name": "MALLA R-100 (15X25) Ø3,8 5x2 MTR",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 49,
+    "name": "MALLA Q-100 (15X15) Ø4 5x2 MTR",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 50,
+    "name": "MALLA RL-131 (15x25) Ø4,5 6x2,40 MTR",
+    "price": 4.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 51,
+    "name": "MALLA QL-158 (15X15) Ø4,8 5x2 MTR",
+    "price": 3.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 52,
+    "name": "MALLA R-131 (15X25) Ø5 6x2,40 MTR",
+    "price": 5.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 53,
+    "name": "MALLA Q-131 (15X15) Ø5 6x2,40 MTR",
+    "price": 7.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 54,
+    "name": "MALLA Q-158 (15X15) Ø5,5 5x2 MTR",
+    "price": 4.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 55,
+    "name": "MALLA R-158 (15x25) Ø5,5 5x2 MTR",
+    "price": 4.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 56,
+    "name": "MALLA Q-188 (15X15) Ø6 6x2,40 MTR",
+    "price": 101020.16,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 57,
+    "name": "MALLA Q-335 (15X15) Ø8 6x2,40 MTR",
+    "price": 179747.34,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 58,
+    "name": "MALLA FIBRA DE VIDRIO 90 GR (5x5) 50x1 mtr",
+    "price": 4.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 59,
+    "name": "MALLA FIBRA DE VIDRIO 110 GR (10x10) 50x1 mtr",
+    "price": 5.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 60,
+    "name": "METAL DESPLEGABLE LIVIANO ( 2 x 0,70 ) 230 A 300 GR x M2",
+    "price": 2134.49,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 61,
+    "name": "METAL DESPLEGABLE ESTANDAR ( 2 x 0,75 ) 370 A 390 GR x M2",
+    "price": 2619.6,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 62,
+    "name": "METAL DESPLEGABLE REFORZADO ( 2 x 0,75 ) 440 A 460 GR x M2",
+    "price": 2910.67,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 63,
+    "name": "GUARDACANTO YESERO X 2 MTR",
+    "price": 1552.36,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 64,
+    "name": "CLAVOS 1\".1/2 x KG",
+    "price": 3307.66,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 65,
+    "name": "CLAVOS 1\".1/2 - CAJON 25 KG",
+    "price": 8.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 66,
+    "name": "CLAVOS 2\" x KG",
+    "price": 3113.25,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 67,
+    "name": "CLAVOS 2\" - CAJON 15 KG IND. ARG.",
+    "price": 7.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 68,
+    "name": "CLAVOS 2\" - CAJON 25 KG ACERBRAG",
+    "price": 7.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 69,
+    "name": "CLAVOS 2\" - CAJON 30 KG ACINDAR",
+    "price": 158029.98,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 70,
+    "name": "CLAVOS 2\".1/2 x KG",
+    "price": 2989.96,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 71,
+    "name": "CLAVOS 2\".1/2 - CAJON 15 KG IND. ARG.",
+    "price": 7.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 72,
+    "name": "CLAVOS 2\".1/2 - CAJON 25 KG ACERBRAG",
+    "price": 7.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 73,
+    "name": "CLAVOS 2\".1/2 - CAJON 30 KG ACINDAR",
+    "price": 152480.31,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 74,
+    "name": "CLAVOS 3\" x KG",
+    "price": 2989.96,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 75,
+    "name": "CLAVOS 3\" - CAJON 25 KG",
+    "price": 7.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 76,
+    "name": "ALAMBRE FARDO PAQ X 1 KG",
+    "price": 3490.1,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 77,
+    "name": "ALAMBRE FARDO X KG GRANEL",
+    "price": 3172.82,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 78,
+    "name": "HIERRO DULCE DEL 4 X KG",
+    "price": 3037.18,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 79,
+    "name": "HIERRO DULCE DEL 6 X KG",
+    "price": 2486.16,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 80,
+    "name": "PASTINA X 1 KG",
+    "price": 2783.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 81,
+    "name": "PASTINA X 5 KG",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 82,
+    "name": "PASTINA ALTA PERFORM X 1 KG",
+    "price": 6798.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 83,
+    "name": "PASTINA X 2 KG",
+    "price": 4538.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 84,
+    "name": "T 10 (10X20X40)",
+    "price": 1205.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 85,
+    "name": "P 13 (13X20X40)",
+    "price": 1414.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 86,
+    "name": "P 20 (20X20X40)",
+    "price": 1942.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 87,
+    "name": "P 20 M (20X20X20)",
+    "price": 1133.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 88,
+    "name": "E 13 (13X20X20)",
+    "price": 1064.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 89,
+    "name": "E 20 (20X20X20)",
+    "price": 1260.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 90,
+    "name": "E 40 (20X20X40)",
+    "price": 3964.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 91,
+    "name": "P 20 SPT",
+    "price": 3154.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 92,
+    "name": "P 20 SPT ESQ",
+    "price": 3385.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 93,
+    "name": "P 20 SPT M",
+    "price": 1722.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 94,
+    "name": "P 20 SPT M ESQ",
+    "price": 1925.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 95,
+    "name": "LOSETA SPT (5X20X40)",
+    "price": 2155.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 96,
+    "name": "P 20 SPT ENC",
+    "price": 4691.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 97,
+    "name": "P 13 SPT",
+    "price": 2610.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 98,
+    "name": "P 13 SPT ESQ",
+    "price": 2926.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 99,
+    "name": "P 13 SPT M ESQ",
+    "price": 1556.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 100,
+    "name": "BLOQUE 19X19X39 P20 LISO",
+    "price": 1831.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 101,
+    "name": "BLOQUE 19X19X39 E20 ENC LISO",
+    "price": 1968.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 102,
+    "name": "BLOQUE 19X19X19 P20 M LISO",
+    "price": 1194.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 103,
+    "name": "BLOQUE 14X19X39 P14 LISO",
+    "price": 1502.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 104,
+    "name": "BLOQUE 14X19X19 P14 M LISO",
+    "price": 991.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 105,
+    "name": "BLOQUE 14X19X39 P14 ENC LISO",
+    "price": 1639.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 106,
+    "name": "BLOQUE 9X19X39 T10 LISO",
+    "price": 1233.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 107,
+    "name": "BLOQUE 9X19X19 T10 M LISO",
+    "price": 862.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 108,
+    "name": "BLOQUE 14X19X39 P14 SPT",
+    "price": 2550.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 109,
+    "name": "BLOQUE 14X19X19 P14 M ESQ SPT",
+    "price": 1878.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 110,
+    "name": "BLOQUE 19X19X39 P20 SPT",
+    "price": 2920.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 111,
+    "name": "BLOQUE 19X19X39 P20 ESQ SPT",
+    "price": 3267.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 112,
+    "name": "BLOQUE 19X19X19 P20 M SPT",
+    "price": 1660.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 113,
+    "name": "BLOQUE 19X19X19 P20 M ESQ SPT",
+    "price": 1842.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 114,
+    "name": "BLOQUE 7X19X39 LOSETA SPT",
+    "price": 1803.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 115,
+    "name": "BLOQUE 19X19X39 P20 ENC SPT",
+    "price": 3267.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 116,
+    "name": "CERESITA HIDROFUGO X 1 KG",
+    "price": 3436.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 117,
+    "name": "CERESITA HIDROFUGO X 4 KG",
+    "price": 9591.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 118,
+    "name": "CERESITA HIDROFUGO X 10 KG",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 119,
+    "name": "CERESITA HIDROFUGO X 20 KG",
+    "price": 3.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 120,
+    "name": "CERESITA HIDROFUGO X 200 KG",
+    "price": 214603.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 121,
+    "name": "TACURU X 1 LTS",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 122,
+    "name": "TACURU X 4 LTS",
+    "price": 3.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 123,
+    "name": "TACURU X 10 LTS",
+    "price": 8.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 124,
+    "name": "TACURU X 20 LTS",
+    "price": 159972.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 125,
+    "name": "TACURU X 200 LTS",
+    "price": 1355597.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 126,
+    "name": "WEBERPRIM IC-52 FIBRADO X 18 KG (LÍQUIDO BALDE)",
+    "price": 173417.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 127,
+    "name": "WEBERPRIM IC-52 FIBRADO X 30 KG (SÓLIDO BOLSA)",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 128,
+    "name": "- 0188 VIGA DE 1.00 A 3.20 MTS",
+    "price": 3779.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 129,
+    "name": "- 0191 VIGA DE 3.40 A 3.80 MTS",
+    "price": 3940.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 130,
+    "name": "- 0193 VIGA DE 4.00 A 4.20 MTS",
+    "price": 4212.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 131,
+    "name": "VIGA DE 4.40 MTS",
+    "price": 4715.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 132,
+    "name": "- 0196 VIGA DE 4.60 A 4.80 MTS",
+    "price": 5002.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 133,
+    "name": "VIGA DE 5.00 MTS",
+    "price": 5087.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 134,
+    "name": "VIGA DE 5.20 MTS",
+    "price": 5256.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 135,
+    "name": "- 0201 VIGA DE 5.40 A 5.80 MTS",
+    "price": 5627.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 136,
+    "name": "- 0203 VIGA DE 6.00 A 6.20 MTS",
+    "price": 6182.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 137,
+    "name": "PERFECTO IMPERMEABLE X 25 KG",
+    "price": 7060.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 138,
+    "name": "PERFECTO PORCELLANATO X 25 KG",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 139,
+    "name": "WEBER.COL GRIS X 25 KGS",
+    "price": 7047.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 140,
+    "name": "WEBER.COL IMP C/CERESITA X25KG",
+    "price": 9047.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 141,
+    "name": "WEBER PRO X 25 KG",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 142,
+    "name": "WEBER.COL PORCELLANATO FLEX X 25 KG",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 143,
+    "name": "WEBER FINO INTERIOR X 25 KG",
+    "price": 8891.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 144,
+    "name": "WEBER FORTE EXTERIOR X 25 KG",
+    "price": 9722.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 145,
+    "name": "WEBER PROMEX I X 30 KG",
+    "price": 9397.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 146,
+    "name": "WEBER PROMEX E X 30 KG",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 147,
+    "name": "ADHESIVO CONSTRUKOR IMPERMEABLE X 30 KG",
+    "price": 9548.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 148,
+    "name": "ADHESIVO IMPERMEABLE X 30 KG",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 149,
+    "name": "KLAUKOL IMPERMEABLE POTENCIADO X 25KG",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 150,
+    "name": "KLAUKOL PORCELLANATO FLUIDO X 30 KG",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 151,
+    "name": "KLAUKOL PORCELLANATO FLUIDO X 25KG",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 152,
+    "name": "KLAUKOL FLEX FLUIDO 25KG",
+    "price": 3.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 153,
+    "name": "ADHESIVO GDES PIEZAS PORCELLANATO X 30 KGS",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 154,
+    "name": "ADHESIVO GDES PIEZAS PORCELLANATO X 25 KGS",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 155,
+    "name": "KLAUKOL STUKO INTERIOR X 25 KG",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 156,
+    "name": "KLAUKOL STUKO EXTERIOR X 25 KG",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 157,
+    "name": "SIKA WALL - 105 RH 25KG",
+    "price": 9884.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 158,
+    "name": "SIKA WALL-120 TRIO JET X 25KG",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 159,
+    "name": "PAREX PUENTE DE ADHERENCIA X 25 KG",
+    "price": 259554.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 160,
+    "name": "WEBER MULTIUSO X 25 KG",
+    "price": 6730.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 161,
+    "name": "WEBER LISTO X 3 KG",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 162,
+    "name": "WEBER ACRYLFIX X 425 GRS (GRIETAS Y FISURAS)",
+    "price": 5453.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 163,
+    "name": "WEBER FLEX PU X 300 ML (POLIURETANICO)",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 164,
+    "name": "WEBER ESPUMA PU X 300 ML (POLIURETANICA)",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 165,
+    "name": "WEBER SILICONA C BLANCO",
+    "price": 9162.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 166,
+    "name": "WEBER SILICONA C TRANSPARENTE",
+    "price": 9162.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 167,
+    "name": "WEBER ANCLAJE QUIMICO X 300 ML",
+    "price": 4.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 168,
+    "name": "LADRILLO RECTO COMUN NATURAL 229X114X63 MM",
+    "price": 3715.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 169,
+    "name": "TEJUELA DE 2 CM. ESMALTADA 229X114X22 MM",
+    "price": 1626.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 170,
+    "name": "TEJUELA DE 2 CM. NATURAL 229X114X22 MM",
+    "price": 1492.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 171,
+    "name": "LISTON DE 2 CM. ESMALTADO 220X60X22 MM",
+    "price": 672.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 172,
+    "name": "LISTON DE 2 CM. NATURAL 220X60X22 MM",
+    "price": 661.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 173,
+    "name": "ESQUINERO CANTO REDONDO ESMALTADO 220X60X25 MM",
+    "price": 2251.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 174,
+    "name": "MEDIO ESQUINERO ESMALTADO 150X60X25 MM (CONSULTAR)",
+    "price": 2019.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 175,
+    "name": "BOLSA DE ARCILLA X 30 KG",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 176,
+    "name": "PEGAMENTO REFRACTARIO X 20 KG",
+    "price": 5.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 177,
+    "name": "MEMBRANA W450 ALUMINIO MAX x 40 KG",
+    "price": 4.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 178,
+    "name": "MEMBRANA W450 GEO PINT x 40 KG",
+    "price": 7.0,
+    "category": "Terminaciones",
+    "image": "/terminaciones.png"
+  },
+  {
+    "id": 179,
+    "name": "MEMBRANA ISOMANTA 400 AL",
+    "price": 3.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 180,
+    "name": "BREA EN PAN OXIFLEX x 20 KG",
+    "price": 6.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 181,
+    "name": "PINTURA ASFALTICA MACA P x 18 LTR",
+    "price": 6.0,
+    "category": "Terminaciones",
+    "image": "/terminaciones.png"
+  },
+  {
+    "id": 182,
+    "name": "EMULSION NOVASFALT ANR-5 x18KG",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 183,
+    "name": "EMULSION ASFALTICA NOVASFALT ANR-5 x 20 KG",
+    "price": 3.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 184,
+    "name": "PINTURA EMACRIL POLIURETANICA BLANCA X 20 LT",
+    "price": 119837.0,
+    "category": "Terminaciones",
+    "image": "/terminaciones.png"
+  },
+  {
+    "id": 185,
+    "name": "PINTURA EMACRIL POLIURETANICA ROJO TEJA X 20 LT",
+    "price": 119837.0,
+    "category": "Terminaciones",
+    "image": "/terminaciones.png"
+  },
+  {
+    "id": 186,
+    "name": "TANQUE INBI BICAPA 600 LTS",
+    "price": 6.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 187,
+    "name": "TANQUE INBI BICAPA 850 LTS",
+    "price": 7.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 188,
+    "name": "TANQUE INBI BICAPA 1000 LTS",
+    "price": 8.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 189,
+    "name": "TANQUE INBI TRICAPA 600 LTS",
+    "price": 7.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 190,
+    "name": "TANQUE INBI TRICAPA 850 LTS",
+    "price": 8.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 191,
+    "name": "TANQUE INBI TRICAPA 1000 LTS",
+    "price": 9.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 192,
+    "name": "BASE CHICA 94 cm",
+    "price": 1.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 193,
+    "name": "BASE GRANDE 116 cm",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 194,
+    "name": "PINTURA HD INTERIOR MATE X 20 LT",
+    "price": 9.0,
+    "category": "Terminaciones",
+    "image": "/terminaciones.png"
+  },
+  {
+    "id": 195,
+    "name": "PINTURA HD EXTERIOR MATE X 20 LT",
+    "price": 116797.0,
+    "category": "Terminaciones",
+    "image": "/terminaciones.png"
+  },
+  {
+    "id": 196,
+    "name": "PINTURA LOOK INTERIOR X 20 LT",
+    "price": 6.0,
+    "category": "Terminaciones",
+    "image": "/terminaciones.png"
+  },
+  {
+    "id": 197,
+    "name": "PINTURA DURATONE (INTERIOR/EXTERIOR) X 20 LT",
+    "price": 6.0,
+    "category": "Terminaciones",
+    "image": "/terminaciones.png"
+  },
+  {
+    "id": 198,
+    "name": "SELLADOR / FIJADOR X 10 LT",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 199,
+    "name": "SELLADOR / FIJADOR X 20 LT",
+    "price": 4.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 200,
+    "name": "TACURÚ ENDUIDO INTERIOR 1 LT",
+    "price": 7579.0,
+    "category": "Terminaciones",
+    "image": "/terminaciones.png"
+  },
+  {
+    "id": 201,
+    "name": "TACURÚ ENDUIDO INTERIOR 10LT",
+    "price": 3.0,
+    "category": "Terminaciones",
+    "image": "/terminaciones.png"
+  },
+  {
+    "id": 202,
+    "name": "TACURÚ ENDUIDO INTERIOR 20LT",
+    "price": 6.0,
+    "category": "Terminaciones",
+    "image": "/terminaciones.png"
+  },
+  {
+    "id": 203,
+    "name": "ENDUIDO PLASTICO X 20LT",
+    "price": 4.0,
+    "category": "Terminaciones",
+    "image": "/terminaciones.png"
+  },
+  {
+    "id": 204,
+    "name": "Balde de Albañil",
+    "price": 2803.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 205,
+    "name": "Pala Ancha",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 206,
+    "name": "Pala de Punta",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 207,
+    "name": "Caño corrugado 7/8 x 25 mtr (Naranja)",
+    "price": 6936.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 208,
+    "name": "Caño corrugado 3/4 x 25 mtr (Naranja)",
+    "price": 5280.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 209,
+    "name": "Caño corrugado 7/8 x 25 mtr (Blanco)",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 210,
+    "name": "Caño corrugado 3/4 x 25 mtr (Blanco)",
+    "price": 8961.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 211,
+    "name": "Caja Hexagonal Metalica N1",
+    "price": 519.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 212,
+    "name": "Caja Rectangular Metalica N1",
+    "price": 519.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 213,
+    "name": "Llana Lisa",
+    "price": 7139.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 214,
+    "name": "Llana Dentada 8x8",
+    "price": 7139.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 215,
+    "name": "Llana Dentada 12x12",
+    "price": 7139.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 216,
+    "name": "Fratacho Pino 30 cm",
+    "price": 1731.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 217,
+    "name": "Fratacho Pino 40 cm",
+    "price": 2254.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 218,
+    "name": "Fratacho Algarrobo 30 cm",
+    "price": 5763.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 219,
+    "name": "Fratacho Algarrobo 40 cm",
+    "price": 6490.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 220,
+    "name": "Fratacho c/fieltro 20 cm",
+    "price": 732.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 221,
+    "name": "Fratacho c/fieltro 25 cm",
+    "price": 855.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 222,
+    "name": "Fratacho c/fieltro 30 cm",
+    "price": 1086.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 223,
+    "name": "Fratacho Abrasivo Fino",
+    "price": 2348.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 224,
+    "name": "Fratacho Abrasivo Mediano",
+    "price": 2348.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 225,
+    "name": "Fratacho Abrasivo Grueso",
+    "price": 2348.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 226,
+    "name": "Cuchara albañil 6\"",
+    "price": 8766.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 227,
+    "name": "Cuchara albañil 8\"",
+    "price": 9388.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 228,
+    "name": "Cuchara albañil 8\" R",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 229,
+    "name": "ALICATE CUERDA DE PIANO 7\" ACP70",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 230,
+    "name": "PINZA DE PUNTA 4,5\" AM04",
+    "price": 7795.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 231,
+    "name": "PINZA PELACABLES 8\" APC80",
+    "price": 3.0,
+    "category": "Electricidad",
+    "image": "/electricidad.png"
+  },
+  {
+    "id": 232,
+    "name": "PICO DE LORO 10\" T.ANTICORROS APL100A",
+    "price": 2.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 233,
+    "name": "PICO DE LORO 10\" APL100",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 234,
+    "name": "PINZA UNIVERSAL 6\" APU60",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 235,
+    "name": "PINZA UNIVERSAL 8\" APU80",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 236,
+    "name": "CEPILLO MANGO PLASTICO A/INOXI BBA",
+    "price": 4180.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 237,
+    "name": "CEPILLO MANGO PLASTICO BRONCE BBM",
+    "price": 3021.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 238,
+    "name": "CUCHARA DE ALBAÑIL 5.5\" CAF55",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 239,
+    "name": "CUCHARA DE ALBAÑIL ROMA 8\" CAF80R",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 240,
+    "name": "PINZA CORTAPERNO 8\" CP80",
+    "price": 9162.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 241,
+    "name": "CUTTER PLASTICO REFORZADO 18mm CU180R",
+    "price": 7415.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 242,
+    "name": "CUTTER TRAPEZOIDAL CUT180B",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 243,
+    "name": "DISCO CORTE DA1110 115x1 DA1110",
+    "price": 568.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 244,
+    "name": "DISCO CORTE DA1116 115x1,6 DA1116",
+    "price": 597.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 245,
+    "name": "DISCO CORTE PLANO 180x1,6 DA1816",
+    "price": 1716.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 246,
+    "name": "DISCO CORTE PLANO 230x2 DA2320",
+    "price": 2923.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 247,
+    "name": "DISCO DIAMANTADO CONTINUO 115 DC115",
+    "price": 3168.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 248,
+    "name": "KIT DESTORNILLADORES X 6 AIS DJ06V",
+    "price": 2.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 249,
+    "name": "DESTORNILLADOR PHI PH1X80 DPH180V",
+    "price": 3839.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 250,
+    "name": "DESTORNILLADOR PHI PH2X100 DPH210V",
+    "price": 4814.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 251,
+    "name": "DESTORNILLADOR PLANO 55-125A DPL512V",
+    "price": 3941.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 252,
+    "name": "DESTORNILLADOR PLANO 60X100 DPL6100",
+    "price": 3141.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 253,
+    "name": "DESTORNILLADOR PLANO 65x150 A DPL615V",
+    "price": 5105.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 254,
+    "name": "DESTORNILLADOR PLANO 8x150 DPL8150",
+    "price": 6093.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 255,
+    "name": "DISCO DIAMANTADO SEG 115MM DS115",
+    "price": 3363.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 256,
+    "name": "DISCO DIAMANTADO SEG 180MM DS180",
+    "price": 8353.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 257,
+    "name": "DISCO DIAMANTADO SEG 230MM DS230",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 258,
+    "name": "DESTORNILLADOR TORX T15 DTX15",
+    "price": 3178.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 259,
+    "name": "DESTORNILLADOR TORX T20 DTX20",
+    "price": 3178.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 260,
+    "name": "ESPATULA INOXIDABLE 250 MM EMG250",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 261,
+    "name": "ESPATULA INOX 70MM EMG70",
+    "price": 4363.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 262,
+    "name": "ESPATULA INOX 90MM EMG90",
+    "price": 4945.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 263,
+    "name": "ESPATULA ESQUINERA EXTERIOR EMGEX",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 264,
+    "name": "ESPATULA ESQUINERA INTERIOR EMGIN",
+    "price": 9947.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 265,
+    "name": "AMOLADORA ANGULAR 850W HAA001",
+    "price": 6.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 266,
+    "name": "NIVEL LASER SMALL HNL100",
+    "price": 8.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 267,
+    "name": "PISTOLA DE CALOR 2000 W HPC001",
+    "price": 5.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 268,
+    "name": "HOJA CUTTER 18x114 HR180",
+    "price": 2397.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 269,
+    "name": "ROTOMARTILLO SDSPLUS 1000W HRM002",
+    "price": 149119.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 270,
+    "name": "KIT MECHAS ACERO RAPIDO 19 PZS HSS19PZ",
+    "price": 4.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 271,
+    "name": "HOJA CUTTER TRAPEZOIDAL 18 HT180",
+    "price": 2097.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 272,
+    "name": "KIT DESTORNILLADOR CRIQUET 49P JP49",
+    "price": 3.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 273,
+    "name": "METRO LASER 40MTS MD40",
+    "price": 5.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 274,
+    "name": "MEZCLADOR 80x400 MDP400",
+    "price": 6253.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 275,
+    "name": "MARTILLO ENCOFRADOR 450GR MGF450",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 276,
+    "name": "MARTILLO PVC/GOMA CABO FIBRA MGP400",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 277,
+    "name": "KIT MECHAS MADERA 6PZS MP6S",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 278,
+    "name": "NIVEL DE ALUMINIO MAGNETICO 40 NS400",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 279,
+    "name": "NIVEL DE ALUMINIO MAGNETICO 60 NS600",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 280,
+    "name": "TRIPODE PARA LASER 50/150 TNL500",
+    "price": 6.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 281,
+    "name": "BATERIA ULTIMATE 20 VOLT 2 AMP ULT101",
+    "price": 5.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 282,
+    "name": "TALADRO PERCUTOR A BATERIA 20V ULT111",
+    "price": 200788.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 283,
+    "name": "KIT BROCAS SDS - 12 PZS WJ12P",
+    "price": 5.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 284,
+    "name": "CEPILLO PARA DRYWALL 6\" CD15",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 285,
+    "name": "BROCA ACERO RÁPIDO ESCALONADA DE 6 A 18MM ESC618",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 286,
+    "name": "MANGO DE FUERZA DE 10\" AB05",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 287,
+    "name": "LLAVE COMBINADA 20 MM WCM20",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 288,
+    "name": "LLAVE COMBINADA 21 MM WCM21",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 289,
+    "name": "DESTORNILLADOR PHILLIPS 2 X 150 MM DPH2150",
+    "price": 3403.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 290,
+    "name": "LÁPIZ CARPINTERO LCB",
+    "price": 9227.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 291,
+    "name": "DESTORNILLADOR PHILLIPS 2 X 300 MM DPH2300",
+    "price": 4785.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 292,
+    "name": "DESTORNILLADOR PHILLIPS 1 X 300 MM DPH1300",
+    "price": 4188.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 293,
+    "name": "PINZA UNIVERSAL 8\" AISLADA 1000V APU80V",
+    "price": 2.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 294,
+    "name": "ARCO DE SIERRA TUBULAR AS20",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 295,
+    "name": "MARTILLO CARPINTERO 250GR MCF250",
+    "price": 9423.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 296,
+    "name": "ESPATULA INOX 60MM EMG60",
+    "price": 4218.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 297,
+    "name": "ESPATULA INOX 40MM EMG40",
+    "price": 3781.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 298,
+    "name": "CUCHARA DE ALBAÑIL 7\" CAF70",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 299,
+    "name": "PINZA SEEGUER 4 PUNTAS AS70M",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 300,
+    "name": "KIT LLAVE COMBINADA 12 Pzas JCM12G",
+    "price": 6.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 301,
+    "name": "PINZA DE PRESION 10\" Página 8 APP100",
+    "price": 1.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 302,
+    "name": "AMOLADORA ANGULAR 1200W 115mm HAA002-A",
+    "price": 105064.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 303,
+    "name": "DESTORNILLADOR PLANO 8x200 DPL8200",
+    "price": 5337.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 304,
+    "name": "JUEGO DE BOCALLAVES 1/4 -12 PZ JB30",
+    "price": 2.0,
+    "category": "Obra Gruesa",
+    "image": "/obra-gruesa.png"
+  },
+  {
+    "id": 305,
+    "name": "NIVEL DE ALUMINIO MAGNETICO 30 NS300",
+    "price": 8061.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  },
+  {
+    "id": 306,
+    "name": "MARTILLO BOLITA 350 G MBF350",
+    "price": 9122.0,
+    "category": "Herramientas",
+    "image": "/herramientas.png"
+  }
+]
