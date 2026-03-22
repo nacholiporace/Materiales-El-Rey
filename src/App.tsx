@@ -219,10 +219,26 @@ const Navbar = ({ cartCount, onCartClick }: { cartCount: number, onCartClick: ()
         </div>
 
         <div className="flex items-center gap-4">
-          <button onClick={() => navigate('/catalogo')} aria-label="Buscar productos" className={`p-2 transition-colors duration-200 cursor-pointer text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-full bg-white/5 border border-white/10 md:bg-transparent md:border-transparent ${isHeaderActive ? 'md:text-zinc-600 md:hover:text-zinc-900' : 'md:text-white md:hover:text-red-400'}`}>
+          <button 
+            onClick={() => navigate('/catalogo')} 
+            aria-label="Buscar productos" 
+            className={`p-2 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-full border md:bg-transparent md:border-transparent ${
+              isHeaderActive 
+                ? 'text-zinc-900 bg-black/5 border-black/10 md:text-zinc-600 md:hover:text-zinc-900 md:bg-transparent' 
+                : 'text-white bg-white/5 border-white/10 md:text-white md:hover:text-red-400'
+            }`}
+          >
             <Search className="w-5 h-5" aria-hidden="true" />
           </button>
-          <button onClick={onCartClick} aria-label={`Carrito de cotización: ${cartCount} artículos`} className={`p-2 transition-colors duration-200 cursor-pointer relative focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-full bg-white/5 text-white border border-white/10 md:bg-transparent md:border-transparent ${isHeaderActive ? 'md:text-zinc-600 md:hover:text-zinc-900' : 'md:text-white md:hover:text-red-400'}`}>
+          <button 
+            onClick={onCartClick} 
+            aria-label={`Carrito de cotización: ${cartCount} artículos`} 
+            className={`p-2 transition-colors duration-200 cursor-pointer relative focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-full border md:bg-transparent md:border-transparent ${
+              isHeaderActive 
+                ? 'text-zinc-900 bg-black/5 border-black/10 md:text-zinc-600 md:hover:text-zinc-900 md:bg-transparent' 
+                : 'text-white bg-white/5 border-white/10 md:text-white md:hover:text-red-400'
+            }`}
+          >
             <ShoppingCart className="w-5 h-5" aria-hidden="true" />
             {cartCount > 0 && (
               <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center" aria-hidden="true">{cartCount}</span>
