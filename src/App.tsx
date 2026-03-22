@@ -195,12 +195,12 @@ const Navbar = ({ cartCount, onCartClick }: { cartCount: number, onCartClick: ()
   return (
     <nav aria-label="Navegación principal" className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isHeaderActive ? 'bg-white/95 backdrop-blur-md py-3 border-b border-zinc-200 shadow-sm' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-12 md:w-14 md:h-14 bg-zinc-950 rounded-xl flex items-center justify-center shadow-lg shadow-red-500/20 p-2 overflow-hidden transition-all duration-300">
+        <Link to="/" className="flex items-center gap-3 group focus:outline-none">
+          <div className="w-12 h-12 md:w-14 md:h-14 bg-zinc-950 rounded-xl flex items-center justify-center shadow-lg shadow-red-500/20 p-2 overflow-hidden transition-all duration-300 group-hover:scale-105">
             <img src="/logo-transparent.png" alt="Materiales El Rey Logo" className="w-full h-auto object-contain" />
           </div>
           <span className={`text-lg leading-tight md:text-2xl font-bold tracking-tighter transition-colors ${isHeaderActive ? 'text-zinc-900' : 'text-white'}`}>MATERIALES <span className="text-red-500">EL REY</span></span>
-        </div>
+        </Link>
 
         <div className={`hidden md:flex items-center gap-8 text-sm font-medium transition-colors ${isHeaderActive ? 'text-zinc-600' : 'text-white/80'}`}>
           <Link to="/" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</Link>
@@ -542,6 +542,11 @@ const Footer = () => {
 function Layout() {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   const cartCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
