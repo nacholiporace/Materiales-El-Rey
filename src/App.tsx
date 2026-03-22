@@ -567,6 +567,9 @@ function Layout() {
       }
       return [...prev, { ...product, quantity: 1 }];
     });
+    if (window.innerWidth >= 768) {
+      setIsCartOpen(true);
+    }
   };
 
   const updateQuantity = (id: number, delta: number) => {
@@ -609,7 +612,7 @@ function Layout() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 100, opacity: 0 }}
-            className="fixed bottom-4 left-4 right-4 md:bottom-6 md:left-auto md:right-6 bg-zinc-900 border border-zinc-700 shadow-2xl rounded-2xl p-4 z-40 flex items-center justify-between md:min-w-[400px]"
+            className="fixed bottom-4 left-4 right-4 md:hidden bg-zinc-900 border border-zinc-700 shadow-2xl rounded-2xl p-4 z-40 flex items-center justify-between"
           >
             <div className="flex flex-col">
               <span className="text-white font-medium text-sm">Presupuesto pendiente</span>

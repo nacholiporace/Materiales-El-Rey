@@ -46,13 +46,13 @@ export default function CartDrawer({ isOpen, onClose, items, onUpdateQuantity, o
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Backdrop */}
+          {/* Backdrop (Solo en móvil para que en desktop el cliente pueda seguir navegando) */}
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-zinc-900/60 backdrop-blur-sm z-[100]"
+            className="fixed inset-0 bg-zinc-900/60 backdrop-blur-sm z-[100] md:hidden"
           />
           
           {/* Drawer */}
