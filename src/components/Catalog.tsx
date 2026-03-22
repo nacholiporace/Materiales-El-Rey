@@ -7,15 +7,15 @@ import { useOutletContext, useSearchParams } from 'react-router-dom';
 import { CartItem } from './CartDrawer';
 
 const FICTITIOUS_PRODUCTS = [
-  { id: 1, name: 'Cemento Loma Negra 50kg', price: 9500, category: 'Obra Gruesa', image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop' },
-  { id: 2, name: 'Hierro Acindar 8mm x 12m', price: 8200, category: 'Obra Gruesa', image: 'https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=800&auto=format&fit=crop' },
-  { id: 3, name: 'Klaukol Impermeable 30kg', price: 12500, category: 'Obra Gruesa', image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop' },
-  { id: 4, name: 'Ladrillo Hueco 18x18x33 (Pallet)', price: 145000, category: 'Obra Gruesa', image: 'https://images.unsplash.com/photo-1585144860131-245db84f9de1?q=80&w=800&auto=format&fit=crop' },
-  { id: 5, name: 'Arena Binder x Bolsón', price: 21000, category: 'Áridos', image: 'https://images.unsplash.com/photo-1621847468142-f8b1eb7ee5cc?q=80&w=800&auto=format&fit=crop' },
-  { id: 6, name: 'Piedra Partida x Bolsón', price: 24000, category: 'Áridos', image: 'https://images.unsplash.com/photo-1516055619830-4be642ec0a11?q=80&w=800&auto=format&fit=crop' },
-  { id: 7, name: 'Pintura Látex Interior 20L', price: 54000, category: 'Terminaciones', image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=800&auto=format&fit=crop' },
-  { id: 8, name: 'Malla Sima 15x15 6mm', price: 32000, category: 'Obra Gruesa', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop' },
-  { id: 9, name: 'Tubo PVC 110mm x 4m', price: 11500, category: 'Sanitarios', image: 'https://images.unsplash.com/photo-1584622781867-1c640bf5e227?q=80&w=800&auto=format&fit=crop' },
+  { id: 1, name: 'Cemento Loma Negra 50kg', price: 9500, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
+  { id: 2, name: 'Hierro Acindar 8mm x 12m', price: 8200, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
+  { id: 3, name: 'Klaukol Impermeable 30kg', price: 12500, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
+  { id: 4, name: 'Ladrillo Hueco 18x18x33 (Pallet)', price: 145000, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
+  { id: 5, name: 'Arena Binder x Bolsón', price: 21000, category: 'Áridos', image: '/aridos.png' },
+  { id: 6, name: 'Piedra Partida x Bolsón', price: 24000, category: 'Áridos', image: '/aridos.png' },
+  { id: 7, name: 'Pintura Látex Interior 20L', price: 54000, category: 'Terminaciones', image: '/terminaciones.png' },
+  { id: 8, name: 'Malla Sima 15x15 6mm', price: 32000, category: 'Obra Gruesa', image: '/obra-gruesa.png' },
+  { id: 9, name: 'Tubo PVC 110mm x 4m', price: 11500, category: 'Sanitarios', image: '/sanitarios.png' },
 ];
 
 const CATEGORIES = ['Todos', 'Obra Gruesa', 'Áridos', 'Terminaciones', 'Sanitarios', 'Herramientas', 'Electricidad'];

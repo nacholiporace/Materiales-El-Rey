@@ -192,10 +192,18 @@ const Navbar = ({ cartCount, onCartClick }: { cartCount: number, onCartClick: ()
   const isCatalogPage = location.pathname.includes('/catalogo');
   const isHeaderActive = isScrolled || isMenuOpen || isCatalogPage;
 
+  const handleHomeClick = (e: React.MouseEvent) => {
+    if (location.pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <nav aria-label="Navegación principal" className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isHeaderActive ? 'bg-white/95 backdrop-blur-md py-3 border-b border-zinc-200 shadow-sm' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3 group focus:outline-none">
+        <Link to="/" onClick={handleHomeClick} className="flex items-center gap-3 group focus:outline-none">
           <div className="w-12 h-12 md:w-14 md:h-14 bg-zinc-950 rounded-xl flex items-center justify-center shadow-lg shadow-red-500/20 p-2 overflow-hidden transition-all duration-300 group-hover:scale-105">
             <img src="/logo-transparent.png" alt="Materiales El Rey Logo" className="w-full h-auto object-contain" />
           </div>
@@ -203,7 +211,7 @@ const Navbar = ({ cartCount, onCartClick }: { cartCount: number, onCartClick: ()
         </Link>
 
         <div className={`hidden md:flex items-center gap-8 text-sm font-medium transition-colors ${isHeaderActive ? 'text-zinc-600' : 'text-white/80'}`}>
-          <Link to="/" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</Link>
+          <Link to="/" onClick={handleHomeClick} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</Link>
           <a href="/#productos" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</a>
           <a href="/#faq" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Preguntas Frecuentes</a>
           <a href="/#proyectos" className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Proyectos</a>
@@ -236,7 +244,7 @@ const Navbar = ({ cartCount, onCartClick }: { cartCount: number, onCartClick: ()
             className="absolute top-full left-0 right-0 bg-white border-b border-zinc-200 p-6 md:hidden shadow-xl"
           >
             <div className="flex flex-col gap-4 text-zinc-600 font-medium">
-              <Link to="/" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</Link>
+              <Link to="/" onClick={handleHomeClick} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Inicio</Link>
               <a href="/#productos" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Productos</a>
               <a href="/#faq" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Preguntas Frecuentes</a>
               <a href="/#proyectos" onClick={() => setIsMenuOpen(false)} className="hover:text-red-600 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded">Proyectos</a>
@@ -378,7 +386,7 @@ const Categories = () => {
                 aria-label={`Explorar categoría ${cat.name}`}
                 className={`group relative overflow-hidden rounded-3xl cursor-pointer shadow-sm hover:shadow-2xl transition-all duration-500 focus:outline-none focus-visible:ring-4 focus-visible:ring-red-500 focus-visible:ring-offset-2 w-full h-full block ${
                   idx === 0 ? 'md:col-span-2 md:row-span-2 min-h-[350px] md:min-h-0' : 'col-span-1 row-span-1 min-h-[300px] md:min-h-0'
-                } ${idx === 1 ? 'md:col-span-2' : ''}`}
+                }`}
               >
               <img 
                 src={cat.image} 
