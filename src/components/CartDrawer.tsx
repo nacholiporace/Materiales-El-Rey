@@ -21,7 +21,7 @@ interface CartDrawerProps {
   onRemove: (id: number) => void;
 }
 
-const WHATSAPP_NUMBER = "541137221189";
+const WHATSAPP_NUMBER = "541130233100";
 
 export default function CartDrawer({ isOpen, onClose, items, onUpdateQuantity, onRemove }: CartDrawerProps) {
   const total = items.reduce((sum, item) => sum + (item.price * item.quantity), 0);

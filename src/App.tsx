@@ -46,7 +46,7 @@ const categories = [
 
 const FloatingWhatsApp = () => (
   <a 
-    href="https://wa.me/541137221189" 
+    href="https://wa.me/541130233100" 
     target="_blank" 
     rel="noopener noreferrer"
     aria-label="Chatear por WhatsApp"
@@ -340,7 +340,7 @@ const Hero = () => {
                 className="hidden"
               />
               <a 
-                href="https://wa.me/541137221189" 
+                href="https://wa.me/541130233100" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="group relative flex h-14 items-center justify-center overflow-hidden rounded-xl bg-[#25D366] px-8 font-bold text-white shadow-lg shadow-[#25D366]/20 transition-all duration-300 ease-out hover:bg-[#20bd5a] hover:pr-14 focus:outline-none ring-offset-zinc-900 cursor-pointer"
